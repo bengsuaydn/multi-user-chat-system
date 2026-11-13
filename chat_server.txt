@@ -1,0 +1,100 @@
+2026-11-13 21:36:21 | CONNECT | User: Bengisu | Address: 127.0.0.1
+2026-11-13 21:37:11 | CONNECT | User: Hilal | Address: 127.0.0.1
+2026-11-13 21:41:35 | DISCONNECT | User: Hilal | Address: 127.0.0.1
+2026-11-13 21:41:59 | CONNECT | User: Hilal | Address: 127.0.0.1
+2026-11-13 21:42:36 | CONNECT | User: Test | Address: 127.0.0.1
+2026-11-13 21:43:10 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: Hello everyone!
+2026-11-13 21:49:37 | PUBLIC | Sender: Test@127.0.0.1 | Message: hello bengisu!
+2026-11-13 21:52:59 | PRIVATE | Sender: Bengisu@127.0.0.1 | Recipient: Hilal | Message: Hi, this is a private message.
+2026-11-13 22:12:50 | CONNECT | User: Bengisu1 | Address: 127.0.0.1
+2026-11-13 22:13:10 | INVALID_NICKNAME | Requested name: *Test
+2026-11-13 22:13:35 | keepalive ping failed
+TimeoutError: timed out while closing connection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/.venv/lib/python3.14/site-packages/websockets/sync/connection.py", line 833, in keepalive
+    with self.send_context():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/.venv/lib/python3.14/site-packages/websockets/sync/connection.py", line 1084, in send_context
+    raise self.close_exc
+websockets.exceptions.ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-11-13 22:16:41 | DISCONNECT | User: Bengisu1 | Address: 127.0.0.1
+2026-11-13 22:21:14 | SOCKET ERROR
+Traceback (most recent call last):
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/server/chat_server.py", line 262, in handle_client
+    data = receive(client)
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/server/chat_server.py", line 37, in receive
+    part = channel.recv(struct.calcsize("L") - len(size_data))
+OSError: [Errno 9] Bad file descriptor
+2026-11-13 22:21:14 | SOCKET ERROR
+Traceback (most recent call last):
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/server/chat_server.py", line 262, in handle_client
+    data = receive(client)
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/server/chat_server.py", line 37, in receive
+    part = channel.recv(struct.calcsize("L") - len(size_data))
+OSError: [Errno 9] Bad file descriptor
+2026-11-13 22:21:14 | DISCONNECT | User: Bengisu | Address: 127.0.0.1
+2026-11-13 22:21:14 | SOCKET ERROR
+Traceback (most recent call last):
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/server/chat_server.py", line 262, in handle_client
+    data = receive(client)
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/server/chat_server.py", line 37, in receive
+    part = channel.recv(struct.calcsize("L") - len(size_data))
+OSError: [Errno 9] Bad file descriptor
+2026-11-13 22:22:14 | CONNECT | User: Bengisu | Address: 127.0.0.1
+2026-11-13 22:22:20 | CONNECT | User: Hilal | Address: 127.0.0.1
+2026-11-13 22:22:26 | CONNECT | User: Test | Address: 127.0.0.1
+2026-11-13 22:24:33 | PUBLIC | Sender: Test@127.0.0.1 | Message: selam
+2026-11-13 22:24:43 | DISCONNECT | User: Test | Address: 127.0.0.1
+2026-11-13 22:27:24 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: message1
+2026-11-13 22:27:26 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: message2
+2026-11-13 22:27:28 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: message3
+2026-11-13 22:27:30 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: messaage4
+2026-11-13 22:27:32 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: message5
+2026-11-13 22:27:34 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: message6
+2026-11-13 22:27:37 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: messsage7
+2026-11-13 22:27:53 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: m
+2026-11-13 22:27:54 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: e
+2026-11-13 22:27:54 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: s
+2026-11-13 22:27:55 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: a
+2026-11-13 22:27:56 | PUBLIC | Sender: Bengisu@127.0.0.1 | Message: s
+2026-11-13 22:27:57 | RATE_LIMIT | User: Bengisu@127.0.0.1
+2026-11-13 22:28:19 | keepalive ping failed
+TimeoutError: timed out while closing connection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/.venv/lib/python3.14/site-packages/websockets/sync/connection.py", line 833, in keepalive
+    with self.send_context():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "/Users/bengisuaydin/Desktop/multi-user-chat-system/.venv/lib/python3.14/site-packages/websockets/sync/connection.py", line 1084, in send_context
+    raise self.close_exc
+websockets.exceptions.ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-11-13 22:30:13 | CONNECT | User: Test | Address: 127.0.0.1
+2026-11-13 22:30:13 | DISCONNECT | User: Test | Address: 127.0.0.1
+2026-11-13 22:32:56 | CONNECT | User: Bengisu | Address: 127.0.0.1
+2026-11-13 22:33:15 | CONNECT | User: Hilal | Address: 127.0.0.1
+2026-11-13 22:33:25 | DISCONNECT | User: Bengisu | Address: 127.0.0.1
+2026-11-13 22:33:35 | CONNECT | User: Bengisu | Address: 127.0.0.1
+2026-11-13 22:33:40 | CONNECT | User: Test | Address: 127.0.0.1
+2026-11-13 22:33:54 | DISCONNECT | User: Test | Address: 127.0.0.1
+2026-11-13 22:34:17 | CONNECT | User: Burak | Address: 127.0.0.1
+2026-11-13 22:34:28 | PUBLIC | Sender: Burak@127.0.0.1 | Message: selamlar
+2026-11-13 22:34:38 | PUBLIC | Sender: Hilal@127.0.0.1 | Message: hi burak
+2026-11-13 22:38:32 | CONNECT | User: *Ali | Address: 127.0.0.1
+2026-11-13 22:40:19 | PUBLIC | Sender: *Ali@127.0.0.1 | Message: Hello via relay!
+2026-11-13 22:41:35 | PUBLIC | Sender: Burak@127.0.0.1 | Message: welcome Ali!
+2026-11-13 22:43:06 | PRIVATE | Sender: *Ali@127.0.0.1 | Recipient: Burak | Message: Thank you Burak!
+2026-11-13 22:47:53 | DISCONNECT | User: Burak | Address: 127.0.0.1
+2026-11-13 22:47:55 | DISCONNECT | User: *Ali | Address: 127.0.0.1
+2026-11-13 22:48:02 | DISCONNECT | User: Bengisu | Address: 127.0.0.1
+2026-11-13 22:48:03 | DISCONNECT | User: Hilal | Address: 127.0.0.1
